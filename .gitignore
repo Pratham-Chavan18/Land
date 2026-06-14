@@ -1,0 +1,14 @@
+__pycache__/
+.venv/
+.pytest_cache/
+*.pyc
+*.log
+.system_generated/
+
+# Ignore large TIFFs and diagnostic images
+data/*/*.tif
+data/*/diagnostics/
+
+# But keep GeoJSONs
+!data/*/predictions.geojson
+!data/*/example_truths.geojson
